@@ -27,21 +27,21 @@ export default function DashboardPage() {
         return (
           <>
             <StatsCards />
-            <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <AgentFeed />
               <AlertsPanel />
             </div>
-            <div className="grid grid-cols-2 gap-4 mb-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
               <PriceChart />
               <RegionsTable />
             </div>
-            <div className="grid grid-cols-2 gap-4">
+            <div className="mb-4">
               <MapView />
             </div>
           </>
         )
       case "map":
-        return <div className="grid grid-cols-2 gap-4"><MapView /></div>
+        return <div className="grid grid-cols-1 md:grid-cols-2 gap-4"><MapView /></div>
 
       case "prices":
         return <PriceChart />

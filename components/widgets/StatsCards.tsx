@@ -30,7 +30,7 @@ const cards = [
 
 export default function StatsCards() {
   return (
-    <div className="grid grid-cols-4 gap-4 mb-6">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
       {cards.map(({ label, value, icon: Icon, color }) => (
         <div key={label} className="bg-white rounded-xl border border-gray-200 p-4">
           <div className={`w-10 h-10 rounded-lg ${color} flex items-center justify-center mb-3`}>
