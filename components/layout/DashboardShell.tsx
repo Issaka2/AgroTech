@@ -14,7 +14,7 @@ export default function DashboardShell({ children, active, setActive }: Props) {
     <div className="flex min-h-screen">
       
       {/* Sidebar — cachée sur mobile */}
-      <div className="hidden md:block">
+      <div className="hidden md:flex h-screen sticky top-0">
         <Sidebar active={active} setActive={setActive} />
       </div>
 
